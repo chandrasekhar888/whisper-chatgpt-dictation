@@ -30,11 +30,12 @@ A lightweight Python tool that listens to your voice, transcribes it using **Whi
 ---
 
 ## ⚙️ Installation  
-
-### 1️⃣ Clone the Repository  
+  
+1️⃣ Clone the Repository  
 ```bash
 git clone https://github.com/chandrasekhar888/whisper-chatgpt-dictation.git
 cd whisper-chatgpt-dictation
+
 2️⃣ Create and Activate Virtual Environment
 bash
 Copy code
@@ -43,49 +44,43 @@ python -m venv venv
 venv\Scripts\activate.bat
 # On Mac/Linux
 source venv/bin/activate
+
 3️⃣ Install Dependencies
 bash
 Copy code
 pip install -r requirements.txt
-Dependencies:
 
+## Dependencies:
 Copy code
 openai-whisper
 keyboard
 pyautogui
 sounddevice
 numpy
-🔧 FFmpeg Setup
+
+## 🔧 FFmpeg Setup
 Whisper needs FFmpeg for audio handling.
 
-Download FFmpeg full build from:
-👉 https://www.gyan.dev/ffmpeg/builds/
-
-Extract it (e.g. D:\AI\ffmpeg-8.0-full_build)
-
-Copy the path of the bin folder (e.g. D:\AI\ffmpeg-8.0-full_build\bin)
-
+Download FFmpeg full build from: 👉 https://www.gyan.dev/ffmpeg/builds/
+Extract it (e.g. Drive:\folder\ffmpeg-8.0-full_build)
+Copy the path of the bin folder 
 Add it to System Environment Variables → Path
 
 Verify it’s working:
-
 bash
 Copy code
 ffmpeg -version
+
 ▶️ How to Use
 Open Command Prompt or PowerShell and run:
-
 bash
 Copy code
 cd whisper-chatgpt-dictation
 venv\Scripts\activate.bat
 python dictate_continuous.py
+
 Then:
-
 Open ChatGPT or any text editor
-
 Hold Alt + C and start speaking
-
 Release Alt + C to stop recording
-
 Your speech instantly appears as text 🎤💬
